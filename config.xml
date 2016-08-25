@@ -14,11 +14,7 @@
         </author>
         <plugin name="cordova-plugin-whitelist" specs="1" />
         <allow-navigation href="*">
-        <access origin="*" launch-external="yes"/>
-        <content src="index.html" />
-        <access origin="*" />
-        <access origin="http://*"/>
-        <allow-intent href="http://*"/>
+
 
         <icon src="icon.png" gap:platform="android" gap:qualifier="ldpi" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="mdpi" />
