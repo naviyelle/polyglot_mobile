@@ -12,6 +12,7 @@
         <author email="elvin.casem@gmail.com" href="http://evenlyten.com">
             Evenly Ten Web Solutions
         </author>
+        <access origin="*" launch-external="yes"/>
         <content src="index.html" />
         <access origin="*" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="ldpi" />
