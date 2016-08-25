@@ -14,10 +14,10 @@
         </author>
         <content src="index.html" />
         <access origin="*" />
-        <uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <acess orgin="htttp://*"/>
+        <allow-intent href="http://*"/>
         
+
         <icon src="icon.png" gap:platform="android" gap:qualifier="ldpi" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="mdpi" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="hdpi" />
