@@ -14,7 +14,8 @@
         </author>
         <content src="index.html" />
         <access origin="*" />
-        <uses-permission android:name="android.permission.INTERNET" />
+        <access origin="http://polyglot.world/polyglot_auth/login.php" subdomain="true"/>
+        
         <icon src="icon.png" gap:platform="android" gap:qualifier="ldpi" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="mdpi" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="hdpi" />
