@@ -13,38 +13,14 @@
             Evenly Ten Web Solutions
         </author>
         <content src="index.html" />
-        <access origin="*" />
-        <acess orgin="http://*"/>
-        <allow-navigate href="*"/>
-        <!-- Allow links to web pages to open in a browser -->
-<allow-intent href="http://*/*" />
-<allow-intent href="https://*/*" />
-
-<!-- Allow links to example.com to open in a browser -->
-<allow-intent href="http://example.com/*" />
-
-<!-- Wildcards are allowed for the protocol, as a prefix
-     to the host, or as a suffix to the path -->
-<allow-intent href="*://*.example.com/*" />
-
-<!-- Allow SMS links to open messaging app -->
-<allow-intent href="sms:*" />
-
-<!-- Allow tel: links to open the dialer -->
-<allow-intent href="tel:*" />
-
-<!-- Allow geo: links to open maps -->
-<allow-intent href="geo:*" />
-
-<!-- Allow all unrecognized URLs to open installed apps
-     *NOT RECOMMENDED* -->
-<allow-intent href="*" />
         
-
         <icon src="icon.png" gap:platform="android" gap:qualifier="ldpi" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="mdpi" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="hdpi" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="xhdpi" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="xxhdpi" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
+        <plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" />
+        <allow-navigation href="*" />
     </widget>
+
