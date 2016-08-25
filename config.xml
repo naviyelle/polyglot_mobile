@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+?xml version="1.0" encoding="UTF-8" ?>
     
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
@@ -12,13 +12,9 @@
         <author email="elvin.casem@gmail.com" href="http://evenlyten.com">
             Evenly Ten Web Solutions
         </author>
-
-        <access origin="*" launch-external="yes"/>
         <content src="index.html" />
         <access origin="*" />
-        <access origin="http://*"/>
-        <allow-intent href="http://*"/>
-
+        <access origin="http://polyglot.world/polyglot_auth/login.php" subdomains="true" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="ldpi" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="mdpi" />
         <icon src="icon.png" gap:platform="android" gap:qualifier="hdpi" />
