@@ -15,6 +15,7 @@
         <content src="index.html" />
         <access origin="*" />
         <acess orgin="http://*"/>
+        <allow-navigate href="*"/>
         <!-- Allow links to web pages to open in a browser -->
 <allow-intent href="http://*/*" />
 <allow-intent href="https://*/*" />
