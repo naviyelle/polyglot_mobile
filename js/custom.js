@@ -5,6 +5,7 @@ function login(){
     var closebutton = document.getElementById("closebutton");
     var uname = document.getElementById("username").value;
     var pwd = document.getElementById("password").value;
+    
 
     
     $$.post('http://polyglot.world/polyglot_auth/login.php', {username: uname, password: pwd}, function (data) {
