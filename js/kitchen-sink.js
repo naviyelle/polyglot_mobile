@@ -285,10 +285,10 @@ myApp.onPageInit('sortable-list', function (page) {
 /* ===== Photo Browser Examples ===== */
 // Create photoprobsers first:
 var photoBrowserPhotos = [
-    {
-        url: 'img/beach.jpg',
-        caption: 'Amazing beach in Goa, India'
-    },
+	{
+		url: 'img/beach.jpg',
+		caption: 'Amazing beach in Goa, India'
+	},
     'http://placekitten.com/1024/1024',
     'img/lock.jpg',
     {
@@ -1077,12 +1077,3 @@ function createContentPage() {
 }
 $$(document).on('click', '.ks-generate-page', createContentPage);
 
-function testpage(){
-    //alert("ehhehe");
-    
-}
-
-$$(document).on('click', '.showcards', testpage);
-
-
-  
