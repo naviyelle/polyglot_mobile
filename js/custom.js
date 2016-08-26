@@ -42,13 +42,7 @@ function login(){
     
 
 }
-$$(document).on('pageInit', '.page[data-page="setting"]', function (e) {
 
- myApp.showPreloader();
-        setTimeout(function () {
-            myApp.hidePreloader();
-        }, 2000);
-})  
 
 $$(document).on('pageAfterAnimation', '.page[data-page="setting"]', function (e) {
   // Do something here when page with data-page="about" attribute loaded and initialized
@@ -59,4 +53,75 @@ $$(document).on('pageAfterAnimation', '.page[data-page="setting"]', function (e)
   document.getElementById('password').value = localStorage.getItem("password");
 
   //alert("dsa");
+})  
+$$(document).on('pageInit', '.page[data-page="index"]', function (e) {
+
+ myApp.showPreloader();
+        setTimeout(function () {
+            myApp.hidePreloader();
+        }, 2000);
+})  
+
+$$(document).on('pageInit', '.page[data-page="profile"]', function (e) {
+
+ myApp.showPreloader();
+        setTimeout(function () {
+            myApp.hidePreloader();
+        }, 2000);
+})  
+
+$$(document).on('pageInit', '.page[data-page="posts"]', function (e) {
+
+ myApp.showPreloader();
+        setTimeout(function () {
+            myApp.hidePreloader();
+        }, 2000);
+})
+
+$$(document).on('pageInit', '.page[data-page="favorites"]', function (e) {
+
+ myApp.showPreloader();
+        setTimeout(function () {
+            myApp.hidePreloader();
+        }, 2000);
+})  
+
+$$(document).on('pageInit', '.page[data-page="likes"]', function (e) {
+
+ myApp.showPreloader();
+        setTimeout(function () {
+            myApp.hidePreloader();
+        }, 2000);
+})
+
+$$(document).on('pageInit', '.page[data-page="settings"]', function (e) {
+
+ myApp.showPreloader();
+        setTimeout(function () {
+            myApp.hidePreloader();
+        }, 2000);
+})  
+
+$$(document).on('pageInit', '.page[data-page="register"]', function (e) {
+
+ myApp.showPreloader();
+        setTimeout(function () {
+            myApp.hidePreloader();
+        }, 2000);
+})  
+
+$$(document).on('pageInit', '.page[data-page="post"]', function (e) {
+
+ myApp.showPreloader();
+        setTimeout(function () {
+            myApp.hidePreloader();
+        }, 2000);
+})  
+
+$$(document).on('pageInit', '.page[data-page="about"]', function (e) {
+
+ myApp.showPreloader();
+        setTimeout(function () {
+            myApp.hidePreloader();
+        }, 2000);
 })  
