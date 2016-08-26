@@ -13,7 +13,7 @@ function login(){
         var user = datas.userid;
         console.log(datas);
        
-        
+         
         if(user != undefined){
              console.log(user);
              var user_name = datas.firstname + " " + datas.lastname;
@@ -21,6 +21,7 @@ function login(){
              
             closebutton.click();
             document.getElementById("user_name").innerHTML = user_name;
+            document.getElementById("email_add").innerHTML = user_name;
         }
         
         
