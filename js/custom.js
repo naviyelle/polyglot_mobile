@@ -16,6 +16,7 @@ function login(){
         if(user != undefined){
              console.log(user);
              var user_name = datas.firstname + " " + datas.lastname;
+             var email_add = datas.email;
              
             closebutton.click();
             document.getElementById("user_name").innerHTML = user_name;
