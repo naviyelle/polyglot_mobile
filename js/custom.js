@@ -21,7 +21,7 @@ function login(){
              
             closebutton.click();
             document.getElementById("user_name").innerHTML = user_name;
-            document.getElementById("email_add").innerHTML = user_name;
+            document.getElementById("email_add").innerHTML = email_add;
         }
         
         
