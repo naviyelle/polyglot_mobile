@@ -413,6 +413,9 @@ myApp.onPageInit('notifications', function (page) {
 
 /* ===== Login screen page events ===== */
 myApp.onPageInit('login-screen-embedded', function (page) {
+
+alert("login");
+
     $$(page.container).find('.button').on('click', function () {
         var username = $$(page.container).find('input[name="username"]').val();
         var password = $$(page.container).find('input[name="password"]').val();
@@ -1085,4 +1088,16 @@ function testpage(){
 $$(document).on('click', '.showcards', testpage);
 
 
-  
+ function checkSession(){
+
+
+    var logoutsignin = document.getElementById("logout_signin");
+
+
+    if(localStorage.getItem("email") === null){
+         logoutsignin.click();
+    }
+
+   
+    //alert ("me");
+} 

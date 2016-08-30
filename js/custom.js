@@ -42,7 +42,27 @@ function login(){
     
 
 }
+$$(document).on('pageInit', '.page[data-page="setting"]', function (e) {
 
+ myApp.showPreloader();
+        setTimeout(function () {
+            myApp.hidePreloader();
+        }, 500);
+})  
+$$(document).on('pageInit', '.page[data-page="tabbar-labels"]', function (e) {
+
+ myApp.showPreloader();
+        setTimeout(function () {
+            myApp.hidePreloader();
+        }, 500);
+})  
+$$(document).on('pageInit', '.page[data-page="cards"]', function (e) {
+
+ myApp.showPreloader();
+        setTimeout(function () {
+            myApp.hidePreloader();
+        }, 500);
+}) 
 
 $$(document).on('pageAfterAnimation', '.page[data-page="setting"]', function (e) {
   // Do something here when page with data-page="about" attribute loaded and initialized
@@ -54,74 +74,20 @@ $$(document).on('pageAfterAnimation', '.page[data-page="setting"]', function (e)
 
   //alert("dsa");
 })  
-$$(document).on('pageInit', '.page[data-page="index"]', function (e) {
 
- myApp.showPreloader();
-        setTimeout(function () {
-            myApp.hidePreloader();
-        }, 2000);
+$$(document).on('pageAfterAnimation', '.page[data-page="profile"]', function (e) {
+
+  console.log("pageanimate profile");
+
+            document.getElementById("profile_user_name").innerHTML = localStorage.getItem("firstname");
+            document.getElementById("email_add").innerHTML = localStorage.getItem("email");
 })  
 
-$$(document).on('pageInit', '.page[data-page="profile"]', function (e) {
+function logout(){
 
- myApp.showPreloader();
-        setTimeout(function () {
-            myApp.hidePreloader();
-        }, 2000);
-})  
+  localStorage.clear();
+  //localStorage.setItem("email") == "";
+  //alert("logout");
+}
 
-$$(document).on('pageInit', '.page[data-page="posts"]', function (e) {
 
- myApp.showPreloader();
-        setTimeout(function () {
-            myApp.hidePreloader();
-        }, 2000);
-})
-
-$$(document).on('pageInit', '.page[data-page="favorites"]', function (e) {
-
- myApp.showPreloader();
-        setTimeout(function () {
-            myApp.hidePreloader();
-        }, 2000);
-})  
-
-$$(document).on('pageInit', '.page[data-page="likes"]', function (e) {
-
- myApp.showPreloader();
-        setTimeout(function () {
-            myApp.hidePreloader();
-        }, 2000);
-})
-
-$$(document).on('pageInit', '.page[data-page="settings"]', function (e) {
-
- myApp.showPreloader();
-        setTimeout(function () {
-            myApp.hidePreloader();
-        }, 2000);
-})  
-
-$$(document).on('pageInit', '.page[data-page="register"]', function (e) {
-
- myApp.showPreloader();
-        setTimeout(function () {
-            myApp.hidePreloader();
-        }, 2000);
-})  
-
-$$(document).on('pageInit', '.page[data-page="post"]', function (e) {
-
- myApp.showPreloader();
-        setTimeout(function () {
-            myApp.hidePreloader();
-        }, 2000);
-})  
-
-$$(document).on('pageInit', '.page[data-page="about"]', function (e) {
-
- myApp.showPreloader();
-        setTimeout(function () {
-            myApp.hidePreloader();
-        }, 2000);
-})  

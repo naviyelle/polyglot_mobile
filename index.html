@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/kitchen-sink.css">
     <link rel="icon" href="img/icon.png">
   </head>
-  <body class="theme-red">
+  <body class="theme-red" onload="checkSession();">
 	
 	
     <div class="statusbar-overlay"></div>
@@ -47,7 +47,7 @@
                           <div class="item-title">Home</div>
                         </div>
                       </div></a></li>
-                  <li><a href="profile.html" class="item-link close-panel">
+                  <li><a href="pages/profile.html" class="item-link close-panel">
                       <div class="item-content">
                         <!--<div class="item-media"><i class="icon ks-icon-like"></i></div>-->
                         <div class="item-inner">
@@ -82,7 +82,7 @@
                           <div class="item-title">Settings</div>
                         </div>
                       </div></a></li>
-                  <li><a href="#" class="item-link close-panel open-login-screen">
+                  <li><a href="#" class="item-link close-panel open-login-screen" id="logout_signin" onclick="logout();">
                       <div class="item-content">
                         <!--<div class="item-media color-red"><i class="icon icon-plus"></i></div>-->
                         <div class="item-inner">
@@ -314,7 +314,7 @@
 	<!--MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS-->
 	
 	
-    <div class="login-screen modal-in">
+    <div class="login-screen">
       <div class="view">
         <div class="page">
           <div class="page-content login-screen-content">
