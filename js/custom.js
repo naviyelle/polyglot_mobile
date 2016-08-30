@@ -25,11 +25,13 @@ function login(){
             localStorage.setItem("nickname", datas.firstname);
             localStorage.setItem("email", datas.email);
             localStorage.setItem("password", datas.password);
+            localStorage.setItem("profileP", datas.profileP);
 
                     
             closebutton.click();
             document.getElementById("user_name").innerHTML = user_name;
             document.getElementById("email_add").innerHTML = email_add;
+            document.getElementById("pimage").src = "http://polyglot.world/beta2/img/"+localStorage.getItem("profileP");
 
         }
         
@@ -79,8 +81,10 @@ $$(document).on('pageAfterAnimation', '.page[data-page="profile"]', function (e)
 
   console.log("pageanimate profile");
 
-            document.getElementById("profile_user_name").innerHTML = localStorage.getItem("firstname");
-            document.getElementById("email_add").innerHTML = localStorage.getItem("email");
+            document.getElementById("profile_user_name").innerHTML = localStorage.getItem("firstname")+ " " +localStorage.getItem("lastname");
+            document.getElementById("profile_email_add").innerHTML = localStorage.getItem("email");
+
+            document.getElementById("profile_image").src = "http://polyglot.world/beta2/img/"+localStorage.getItem("profileP");
 })  
 
 function logout(){
